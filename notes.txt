@@ -1,0 +1,25 @@
+------------------------------------------------------- TO-DO --------------------------------------------------------------
+
+1.      pages menu (w/ copyright)
+2.      menu
+
+
+
+
+--------------------------------------------------- SAVED SCRIPTS ----------------------------------------------------------
+
+<h1 class="title" style="top: 700px; left:50px; width: 90%; text-align: center; font-size: 80px; color: black;">
+    Open tools to empower design and creativity
+</h1>
+<p class="desc" style="top: 930px; left: 20px; width: 95%; text-align: center; font-size: large; color: black;">
+    We put our effort into creating open-source tools
+</p>
+
+
+
+<h1 class="title" style="font-size: 80px; width: 40%;">
+        Reach out Chromanext on socials
+    </h1>
+    <p class="desc" style="top: 100px; left: 40%; width: 30%;">
+        Thank you for using Chromanext 🤍 You can support by reaching out on socials below.
+    </p>
