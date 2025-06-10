@@ -11,104 +11,33 @@ body {
     font-size: 50px;
 }
 
-/* Global */
+/* Elements */
 .banner {
-    color: white;
-    background-color: black;
-    font-family: "Cal Sans";
-    width: 98%;
-    height: 10%;
-    border-radius: 5px;
-    border: 2px solid white;
     position: fixed;
-    z-index: 1;
-}
-
-.banner a {
-    text-decoration: none;
-    color: white;
-}
-
-.title {
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 60%;
-    font-family: "Cal Sans";
-    line-height: 80%;
-    font-size:100px;
-}
-
-.hltxt {
-    font-family: "Playfair Display";
-    font-style: italic;
-    font-weight: bolder;
-}
-
-.icon {
-    height: 50px;
-    width: 50px;
-    position: relative;
-    top: 9px;
-    left: 188px;
-}
-
-.desc {
-    font-family: "DM Sans";
-    color: white;
-    position: absolute;
-}
-
-.mainbtn {
+    z-index: 0;
     background-color: black;
-    color: white;
-    border-color: white;
-    border-radius: 10px;
-    font-size: x-large;
-    padding: 10px 20px;
-    font-family: "Cal Sans";
-    cursor: pointer;
+    width: 100%;
+    height: 10vh;
 }
 
-.mainbtn a {
-    text-decoration: none;
-    color: white;
-}
-
-.mainbtn:hover {
-    background: white;
-    border: 2px solid white;
-    color: black;
-}
-
-.mainbtn:hover a {
-    background-color: white;
-    color: black;
-}
-
-.optionbtn {
-    color: white;
+.topbar {
     background-color: black;
-    border: none;
-    font-size: large;
+    position: fixed;
+    display: flex;
+    left: 55%;
+    top: 5vh;
+}
+
+.page {
+    color: white;
     font-family: "Cal Sans";
+    font-size: calc(10vh * 2vw);
     font-weight: 100;
-    padding: 0px 5px;
-    text-align: center;
-    cursor: pointer;
+    position: relative;
+    left: 100%;
 }
 
-.optionbtn a {
+.topbar a {
     text-decoration: none;
-    color: white;
-    text-align: center;
-}
-
-.optionbtn:hover {
-    color: white;
-    padding: 0px 5px;
-}
-
-.optionbtn:hover a {
     color: white;
 }
