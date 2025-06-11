@@ -13,7 +13,7 @@ body {color: white; background-color: black;}
     position: fixed;
     z-index: 0;
     background-color: black;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
 }
 
@@ -24,6 +24,7 @@ body {color: white; background-color: black;}
     left: 55%;
     top: 5vh;
 }
+.topbar a {text-decoration: none; color: white;}
 
 .page {
     color: white;
@@ -37,8 +38,6 @@ body {color: white; background-color: black;}
     width: 5vw;
 }
 
-.topbar a {text-decoration: none; color: white;}
-
 .menu {
     width: 50px;
     height: 100px;
@@ -50,7 +49,6 @@ body {color: white; background-color: black;}
     width: 100%;
     transition: opacity .15s ease-in-out;
 }
-
 .menu.active {opacity: 1; pointer-events: auto;}
 .menu a {text-decoration: none; color: white;}
 
@@ -61,3 +59,31 @@ body {color: white; background-color: black;}
     font-family: "DM Sans";
     font-size: 2vh;
 }
+
+.title {
+    position: absolute;
+    text-align: center;
+    left: 10vw;
+    top: 10vh;
+    width: 80vw;
+    font-family: "Cal Sans";
+    font-size: 15vh;
+    line-height: 80%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.title.active {opacity: 1;}
+
+.hl {font-family: "Playfair display"; font-weight: 900; font-style: italic;}
+
+.desc {
+    position: absolute;
+    text-align: center;
+    width: 50vw;
+    left: 25vw;
+    top: 68vh;
+    font-family: "DM Sans";
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+.desc.active {opacity: 1;}
