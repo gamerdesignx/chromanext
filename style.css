@@ -83,7 +83,28 @@ body {color: white; background-color: black;}
     left: 25vw;
     top: 68vh;
     font-family: "DM Sans";
+    font-size: 2.5vh;
+    line-height: 97%;
     opacity: 0;
-    transition: opacity 3s ease;
+    transition: opacity 2s ease;
 }
 .desc.active {opacity: 1;}
+
+.btn {
+    position: absolute;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-family: "Cal Sans";
+    font-size: 3vh;
+    text-align: center;
+    padding: .5% 1% .5% .8%;
+    width: 15vw;
+    border-radius: 10ch;
+    top: 82vh;
+    left: 42.5vw;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.btn.active {opacity: 1;}
+.btn:hover {background-color: white; color: black; border-radius: .5ch;}
