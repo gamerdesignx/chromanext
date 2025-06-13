@@ -3,22 +3,34 @@ body {color: white; background-color: black;}
 
 .material-symbols-rounded {
     border: none;
-    background-color: black;
+    background-color: transparent;
     color: white;
     font-size: 7vh;
 }
 
 /* Elements */
-.banner {
+.blur {
     position: fixed;
     z-index: 0;
-    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 9vw;
+    backdrop-filter: blur(50px);
+    transition: height .5s ease;
+}
+.blur.active {height: 12vw;}
+
+.banner {
+    position: fixed;
+    background-color: transparent;
+    z-index: 0;
     width: 100vw;
     height: 10vh;
 }
 
 .topbar {
-    background-color: black;
+    background-color: transparent;
     position: fixed;
     display: flex;
     left: 55%;
@@ -28,7 +40,7 @@ body {color: white; background-color: black;}
 
 .page {
     color: white;
-    background-color: black;
+    background-color: transparent;
     font-family: "Cal Sans";
     font-size: 2.5vh;
     font-weight: 100;
@@ -63,11 +75,11 @@ body {color: white; background-color: black;}
 .title {
     position: absolute;
     text-align: center;
-    left: 10vw;
-    top: 10vh;
-    width: 80vw;
+    left: 15vw;
+    top: 15vh;
+    width: 70vw;
     font-family: "Cal Sans";
-    font-size: 15vh;
+    font-size: 12vh;
     line-height: 80%;
     opacity: 0;
     transition: opacity 1s ease;
@@ -79,11 +91,11 @@ body {color: white; background-color: black;}
 .desc {
     position: absolute;
     text-align: center;
-    width: 50vw;
-    left: 25vw;
-    top: 68vh;
+    width: 40vw;
+    left: 30vw;
+    top: 62vh;
     font-family: "DM Sans";
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     line-height: 97%;
     opacity: 0;
     transition: opacity 2s ease;
@@ -101,7 +113,7 @@ body {color: white; background-color: black;}
     padding: .5% 1% .5% .8%;
     width: 15vw;
     border-radius: 10ch;
-    top: 82vh;
+    top: 75vh;
     left: 42.5vw;
     cursor: pointer;
     transition: background-color .3s, border-radius .1s ease;
