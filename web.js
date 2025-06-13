@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     menubtn.addEventListener("click", function() {
         menu.classList.toggle("active")
-        menubtn.textContent = menu.classList.contains("active") ? "notes" : "menu"
 
         blur.classList.toggle("active")
     })
