@@ -1,122 +1,132 @@
 /* Setup */
-body {color: white; background-color: black;}
+body {color: white; background-color: black; font-family: "Cal Sans"; font-weight: 100;}
+a {text-decoration: none; color: white;}
+.highlight {font-family: "Playfair Display"; font-weight: 800; font-style: italic;}
 
 .material-symbols-rounded {
     border: none;
     background-color: transparent;
     color: white;
-    font-size: 7vh;
 }
 
 /* Elements */
-.blur {
+header {
     position: fixed;
     z-index: 0;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 9vw;
-    backdrop-filter: blur(50px);
-    transition: height .5s ease;
-}
-.blur.active {height: 12vw;}
-
-.banner {
-    position: fixed;
-    background-color: transparent;
-    z-index: 0;
-    width: 100vw;
-    height: 10vh;
-}
-
-.topbar {
-    background-color: transparent;
-    position: fixed;
     display: flex;
-    left: 55%;
-    top: 5vh;
-}
-.topbar a {text-decoration: none; color: white;}
+    justify-content: flex-start;
 
-.page {
-    color: white;
-    background-color: transparent;
-    font-family: "Cal Sans";
-    font-size: 2.5vh;
-    font-weight: 100;
-    position: relative;
-    left: 100%;
-    text-align: left;
-    width: 5vw;
-}
-
-.menu {
-    width: 50px;
-    height: 100px;
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    left: 2vw;
-    top: 10vh;
     width: 100%;
-    transition: opacity .15s ease-in-out;
+    height: 10%;
+    top: 5%;
+    left: 2%;
 }
-.menu.active {opacity: 1; pointer-events: auto;}
-.menu a {text-decoration: none; color: white;}
 
-.options {
-    position: absolute;
-    top: 0;
-    text-align: left;
-    font-family: "DM Sans";
-    font-size: 2vh;
+.pagetitle {
+    display: flex;
+    justify-content: flex-start;
+
+    background-color: transparent;
+    border-radius: 1000px;
+    border: 1px solid rgba(255,255,255,.7);
+    backdrop-filter: blur(2vh);
+
+    width: 15%;
+    height: 100%;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    left: 1%;
 }
 
 .title {
-    position: absolute;
-    text-align: center;
-    left: 15vw;
-    top: 15vh;
-    width: 70vw;
-    font-family: "Cal Sans";
-    font-size: 12vh;
-    line-height: 80%;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-.title.active {opacity: 1;}
+    align-items: center;
+    text-align: left;
 
-.hl {font-family: "Playfair display"; font-weight: 900; font-style: italic;}
+    font-size: 3vh;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: transparent;
+    border-radius: 1000px;
+    border: 1px solid rgba(255,255,255,.7);
+    backdrop-filter: blur(20px);
+
+    position: relative;
+    left: 1%;
+    width: 40%;
+    height: 100%;
+}
+
+.page {
+    align-items: center;
+    text-align: left;
+    position: relative;
+
+    font-family: "DM Sans";
+    font-weight: 300;
+    font-size: 2.5vh;
+    transition: font-weight .1s ease;
+}
+
+.page:hover {font-weight: 900;}
+
+.content {
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.maintext {
+    position: relative;
+    z-index: -1;
+    left: 3%;
+    top: 20vh;
+    width: 70%;
+
+    line-height: 85%;
+    font-size: 10vh;
+}
 
 .desc {
-    position: absolute;
-    text-align: center;
-    width: 40vw;
-    left: 30vw;
-    top: 62vh;
+    position: relative;
+    z-index: -1;
+    left: 3%;
+    top: 15vh;
+    width: 70%;
+
+    line-height: 100%;
+    font-size: 2.5vh;
     font-family: "DM Sans";
-    font-size: 2.2vh;
-    line-height: 97%;
-    opacity: 0;
-    transition: opacity 2s ease;
+    font-weight: 300;
 }
-.desc.active {opacity: 1;}
 
 .btn {
-    position: absolute;
-    background-color: black;
-    border: 2px solid white;
-    color: white;
+    position: relative;
+    z-index: -1;
+    left: 3%;
+    top: 18vh;
+    width: 22%;
+    height: 8vh;
+
     font-family: "Cal Sans";
     font-size: 3vh;
-    text-align: center;
-    padding: .5% 1% .5% .8%;
-    width: 15vw;
-    border-radius: 10ch;
-    top: 75vh;
-    left: 42.5vw;
+    color: white;
+    background-color: transparent;
+    border: .2vh solid white;
+    border-radius: 1000px;
     cursor: pointer;
-    transition: background-color .3s, border-radius .1s ease;
+    transition: color, background-color, width .1s ease-in-out;
 }
-.btn.active {opacity: 1;}
-.btn:hover {background-color: white; color: black; border-radius: .5ch;}
+
+.btn:hover {background-color: white; color: black; width: 24%;}
